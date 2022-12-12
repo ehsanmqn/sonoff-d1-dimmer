@@ -72,7 +72,7 @@ void setup() {
   Serial.println("[ INFO ] Connected to WiFi: ");
 
   server.begin();
-  client.setServer(dmiotServer, mqttPort);
+  client.setServer(platformServer, mqttPort);
   client.setCallback(on_message);
 }
 
@@ -177,7 +177,7 @@ void set_status(bool power, uint8_t dimmer) {
 // Reconnect to the server function
 void reconnect() {
   // Connecting to the server
-  Serial.println("[ INFO ] Connecting to DMIoT server ...");
+  Serial.println("[ INFO ] Connecting to server ...");
 
   // Attempt to connect (clientId, username, password)
   if ( client.connect("Tedon 1 Pole Device", TOKEN, NULL) ) {
