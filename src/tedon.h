@@ -1,6 +1,6 @@
 
 // Device token
-#define TOKEN "at3gTTk9xYpS8Etq"
+#define TOKEN "PLACE_TOKEN_HERE"
 
 // GPIO bindings
 #define GPIO0 0
@@ -30,8 +30,8 @@
 
 // Server Configuration
 int mqttPort = 1883;
-char dmiotServer[] = "46.100.58.20";
+char dmiotServer[] = "PLATFORM_ADDRESS";
 
 // We assume that all GPIOs are LOW
 bool gpioState[] = {false, false, false, false};
-char wifiSSID[20] = "DM Switch 1 pole";
+char wifiSSID[20] = "CHOOSE_SSID";
